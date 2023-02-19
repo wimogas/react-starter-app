@@ -1,0 +1,44 @@
+:root {
+    --color-primary: rgb(20, 149, 235);
+    --color-primary-light: rgb(109, 195, 252);
+    --color-primary-dark: rgb(11, 87, 138);
+    --color-primary-darker: rgb(4, 9, 34);
+    --color-primary-darkest: rgb(5, 4, 20);
+
+    --color-secondary: rgb(114, 114, 114);
+    --color-secondary-lightest: rgb(236, 236, 236);
+    --color-secondary-light: rgb(207, 207, 207);
+    --color-secondary-dark: rgb(77, 77, 77);
+
+    --color-error: rgb(202, 57, 38);
+    --color-success: rgb(24, 153, 73);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color:white;
+    background-color: var(--color-primary-darker);
+    min-width: 420px;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+button a {
+    color: white;
+}
