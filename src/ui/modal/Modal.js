@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 
-import CloseFill from 'remixicon-reactjs/src/icons/system/CloseFill'
+import CloseFill from '../../assets/icons/close-fill.svg?raw'
 
 import UIContext from "../../store/ui-context";
 
 import Block from "../block/Block";
 import Button from "../button/Button";
+import Icon from "../icon/Icon";
 
 import styles from './Modal.module.css'
 
@@ -25,7 +26,7 @@ const Modal = ({children, close, title}) => {
           <div className={styles['modal-header']}>
             <h1 className={styles.title}>{title}</h1>
             <Button variant={'secondary'} action={close}>
-              <CloseFill fill={uiCtx.colors['secondary']} />
+              <Icon fill={uiCtx.colors['secondary']}><CloseFill/></Icon>
             </Button>
           </div>
           <div className={styles['modal-body']}>

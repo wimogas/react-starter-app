@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import GhostLine from 'remixicon-reactjs/src/icons/user/GhostLine'
 
+import GhostLine from '../../assets/icons/ghost-line.svg?raw'
 import UIContext from "../../store/ui-context";
 
 import Block from "../block/Block";
+import Icon from '../icon/Icon';
 
 const EmptyState = (props) => {
 
@@ -16,7 +17,7 @@ const EmptyState = (props) => {
       gap={24} 
       align={'center'}
     >
-      <GhostLine size={64} fill={uiCtx.colors['secondary']} />
+      <Icon size={64} fill={uiCtx.colors['secondary']}><GhostLine/></Icon>
       {props.content}
       {props.action && props.action}
     </Block>

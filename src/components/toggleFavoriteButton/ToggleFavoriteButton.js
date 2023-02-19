@@ -1,9 +1,10 @@
 import React, { useContext }  from "react";
 
-import HeartFill from 'remixicon-reactjs/src/icons/Health/HeartFill'
-import HeartLine from 'remixicon-reactjs/src/icons/Health/HeartLine'
+import HeartFill from '../../assets/icons/heart-fill.svg?raw'
+import HeartLine from '../../assets/icons/heart-line.svg?raw'
 
 import Button from "../../ui/button/Button";
+import Icon from '../../ui/icon/Icon';
 
 import FavoritesContext from "../../store/favorites-context";
 import UIContext from "../../store/ui-context";
@@ -28,8 +29,8 @@ const ToggleFavoriteButton = ({item}) => {
   return (
     <Button variant={'secondary'} action={() => toggleFavoriteHandler(item)}>
       {itemIsFavorited ? 
-        <HeartFill fill={uiCtx.colors['error']} /> 
-      : <HeartLine fill={uiCtx.colors['error']} />
+        <Icon fill={uiCtx.colors['error']}><HeartFill/></Icon>
+      : <Icon fill={uiCtx.colors['error']}><HeartLine/></Icon>
       } 
     </Button>
   );
