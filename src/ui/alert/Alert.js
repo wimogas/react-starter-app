@@ -20,7 +20,7 @@ const Alert = ({message, variant, type, close}) => {
     <div className={`${styles.alert} ${styles[type]}`}>
       <Block align={'center'} gap={12}>
         {variant === 'success' ? <Icon fill={uiCtx.colors['success']}><CheckboxCircleLine/></Icon> :
-        <Icon fill={uiCtx.colors['error']}><CloseCircleLine/></Icon>}0
+        <Icon fill={uiCtx.colors['error']}><CloseCircleLine/></Icon>}
         {message}
       </Block>
       <Button variant={'secondary'} action={close}>
