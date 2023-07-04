@@ -32,7 +32,7 @@ const ItemPage = () => {
   )
 
   const title = (
-    <EditableField field="title" item={foundItem[0]} required type={'h1'} color="white" />
+    <EditableField field="title" item={foundItem[0]} required type={'h1'} color="var(--color-primary-darker)" />
   )
 
   return (

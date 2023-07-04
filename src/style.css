@@ -25,8 +25,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color:white;
-    background-color: var(--color-primary-darker);
+    color:var(--color-primary-darker);
+    background-color: var(--color-secondary-lightest);
     min-width: 420px;
 }
 
