@@ -1,11 +1,9 @@
 import React, { useContext }  from "react";
-
-import DeleteBinLine from '../../assets/icons/delete-bin-line.svg?raw'
+import {Icon} from 'react-remixicon-ts'
 
 import ItemsContext from "../../store/items-context";
 import UIContext from "../../store/ui-context";
 
-import Icon from '../../ui/icon/Icon'
 import Button from "../../ui/button/Button";
 
 const DeleteItemButton = ({id}) => {
@@ -22,9 +20,7 @@ const DeleteItemButton = ({id}) => {
     <Button 
       variant={'secondary'} 
       action={() => toggleDeleteItemHandler(id)}>
-      <Icon fill="rgb(114, 114, 114)">
-        <DeleteBinLine/>
-      </Icon>
+      <Icon icon={'delete-bin-line'} color="rgb(114, 114, 114)"/>
     </Button>
   );
 };

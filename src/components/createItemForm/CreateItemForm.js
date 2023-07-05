@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
-
-import AddFill from '../../assets/icons/add-fill.svg?raw'
+import {Icon} from 'react-remixicon-ts'
 
 import ItemsContext from "../../store/items-context";
 import UIContext from "../../store/ui-context";
@@ -8,7 +7,6 @@ import UIContext from "../../store/ui-context";
 import Button from "../../ui/button/Button";
 import Block from "../../ui/block/Block";
 import Input from "../../ui/input/Input";
-import Icon from '../../ui/icon/Icon';
 
 const CreateItemForm = () => {
 
@@ -46,7 +44,7 @@ const CreateItemForm = () => {
         <Input label="Title *" name="title" value={title} onChange={handleChangeTitle} error={validateError} />
         <Input label="Description" name="description" value={description} onChange={e => setDescription(e.target.value)} />
         <Block justify={'flex-end'}>
-          <Button variant={'primary'}><Icon fill="white"><AddFill/></Icon> Add Item</Button>
+          <Button variant={'primary'}><Icon icon={'add-fill'} color="white"/> Add Item</Button>
         </Block>
       </Block>
     </form>

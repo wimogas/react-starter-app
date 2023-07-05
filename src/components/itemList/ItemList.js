@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "../../ui/grid/Grid";
 
 import Item from "../item/Item";
-
 const ItemList = ({items}) => {
   
   return (

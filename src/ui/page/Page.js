@@ -3,7 +3,6 @@ import React from "react";
 import Block from "../block/Block";
 
 import styles from './Page.module.css'
-
 const Page = (props) => {
 
   return (

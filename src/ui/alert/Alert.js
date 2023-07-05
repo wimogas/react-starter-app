@@ -1,14 +1,10 @@
 import React, { useContext } from "react";
-
-import CheckboxCircleLine from '../../assets/icons/checkbox-circle-line.svg?raw'
-import CloseCircleLine from '../../assets/icons/close-circle-line.svg?raw'
-import CloseFill from '../../assets/icons/close-fill.svg?raw'
+import {Icon} from 'react-remixicon-ts'
 
 import UIContext from "../../store/ui-context";
 
 import Button from "../button/Button";
 import Block from "../block/Block";
-import Icon from "../icon/Icon";
 
 import styles from "./Alert.module.css";
 
@@ -19,12 +15,12 @@ const Alert = ({message, variant, type, close}) => {
   return (
     <div className={`${styles.alert} ${styles[type]}`}>
       <Block align={'center'} gap={12}>
-        {variant === 'success' ? <Icon fill={uiCtx.colors['success']}><CheckboxCircleLine/></Icon> :
-        <Icon fill={uiCtx.colors['error']}><CloseCircleLine/></Icon>}
+        {variant === 'success' ? <Icon icon={'checkbox-circle-line'} color={uiCtx.colors['success']}/> :
+        <Icon icon={'close-circle-line'} color={uiCtx.colors['error']}/>}
         {message}
       </Block>
       <Button variant={'secondary'} action={close}>
-        <Icon fill={uiCtx.colors['secondary']}><CloseFill/></Icon>
+        <Icon icon={'close-fill'} color={uiCtx.colors['secondary']}/>
       </Button>
     </div>
   );

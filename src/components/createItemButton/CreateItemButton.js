@@ -1,11 +1,9 @@
 import React, { useContext }  from "react";
-
-import AddFill from '../../assets/icons/add-fill.svg?raw'
+import {Icon} from 'react-remixicon-ts'
 
 import UIContext from "../../store/ui-context";
 
 import Button from "../../ui/button/Button";
-import Icon from '../../ui/icon/Icon';
 
 import CreateItemForm from "../createItemForm/CreateItemForm";
 
@@ -19,7 +17,7 @@ const CreateItemButton = () => {
 
   return (
     <Button variant={'primary'} action={handleOpenCreateItemModal}>
-      <Icon fill="white"><AddFill/></Icon>
+      <Icon icon={'add-fill'} color={"white"}/>
       Add
     </Button>
   );

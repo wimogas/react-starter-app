@@ -1,10 +1,7 @@
 import React, { useContext, useState } from "react";
-
-import PencilLine from '../../assets/icons/pencil-line.svg?raw'
+import {Icon} from 'react-remixicon-ts'
 
 import UIContext from "../../store/ui-context";
-
-import Icon from '../icon/Icon';
 
 import styles from './Text.module.css'
 
@@ -28,7 +25,7 @@ const Text = ({type, text, color, editable}) => {
       onMouseLeave={handleHover}
     >
       {text}
-      {editable && hovered && <Icon fill={uiCtx.colors[color]}><PencilLine/></Icon>}
+      {editable && hovered && <Icon icon={'pencil-line'} color={uiCtx.colors[color]}/>}
     </Type>
   );
 };
