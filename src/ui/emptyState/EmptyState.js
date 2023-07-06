@@ -16,7 +16,7 @@ const EmptyState = (props) => {
       gap={24} 
       align={'center'}
     >
-      <Icon icon={'ghost-line'} size={64} color={uiCtx.colors['secondary']}/>
+        <Icon icon={'ghost-line'} size={120} color={uiCtx.colors['secondary']}/>
       {props.content}
       {props.action && props.action}
     </Block>
